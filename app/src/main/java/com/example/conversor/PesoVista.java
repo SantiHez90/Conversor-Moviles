@@ -18,8 +18,6 @@ public class PesoVista extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_peso_vista);
 
-
-
         //Declaro las variables a los objetos
         Spinner spinnerPeso = findViewById(R.id.spinnerTemperatura);
         Button btnVolver = findViewById(R.id.btnVolver);
@@ -41,14 +39,12 @@ public class PesoVista extends AppCompatActivity {
 
                 System.out.println(ValorString);
 
-
                 if (ValorString.equals("")) {
                     txtResultado.setText("Asigne Valor");
                     return;
                 }
 
                 double valor = Double.parseDouble(txtValor.getText().toString());
-
 
                 if (opcion.equals("Kilogramos a Libras")) {
                     Peso peso = new Peso("Kilogramos", "Libras");

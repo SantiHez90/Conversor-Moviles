@@ -21,8 +21,8 @@ public class DivisasVista extends AppCompatActivity {
         //Encuentro los objetos
 
         Button btnVolver = findViewById(R.id.btnVolver);
-        Button btnConvertirDivisa = findViewById(R.id.btnConvertirTemperatura);
-        Spinner spinnerDivisa = findViewById(R.id.spinnerTemperatura);
+        Button btnConvertirDivisa = findViewById(R.id.btnConvertirDivisa);
+        Spinner spinnerDivisa = findViewById(R.id.spinnerDivisa);
         EditText txtValor = findViewById(R.id.txtValor);
         TextView txtResultado = findViewById(R.id.txtResultado);
 
@@ -74,7 +74,7 @@ public class DivisasVista extends AppCompatActivity {
 
             }
         });
-        
+
         btnVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
