@@ -26,9 +26,8 @@
             android:fontFamily="sans-serif-black"
             android:text="Conversor de unidades"
             android:textAlignment="center"
-            android:textColor="#A63C3C"
-            android:textSize="35sp"
-            />
+            android:textColor="#f2d6b3"
+            android:textSize="35sp" />
 
     </RelativeLayout>
 

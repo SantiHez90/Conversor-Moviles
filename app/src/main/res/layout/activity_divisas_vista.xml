@@ -110,8 +110,11 @@
         android:layout_width="249dp"
         android:layout_height="191dp"
         android:src="@drawable/divisas"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="113dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
