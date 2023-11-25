@@ -4,6 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f2d6b3"
     tools:context=".LongitudVista">
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="186dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#BF8450"
+        android:text="Menu"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="576dp" />
+
+    <Spinner
+        android:id="@+id/spinnerLongitud"
+        android:layout_width="333dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:backgroundTint="#000000"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtValor"
+        android:layout_width="262dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txtResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTemperatura" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="205dp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValor" />
+
+    <Button
+        android:id="@+id/btnConvertirLongitud"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="#BF8450"
+        android:text="Convertir"
+        android:textColor="#000000"
+        android:textColorHighlight="#BF8450"
+        android:textColorLink="#BF8450"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnVolver" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertidor Longitud 📏"
+        android:textColor="#A63C3C"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

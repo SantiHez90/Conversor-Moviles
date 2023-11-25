@@ -13,11 +13,6 @@ import android.widget.TextView;
 
 public class PesoVista extends AppCompatActivity {
 
-    Button btnVolver, btnConvertirPeso;
-    TextView txtResultado;
-    Spinner spinnerPeso;
-    EditText txtValor;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +21,9 @@ public class PesoVista extends AppCompatActivity {
 
 
         //Declaro las variables a los objetos
-        Spinner spinnerPeso = findViewById(R.id.spinnerPeso);
+        Spinner spinnerPeso = findViewById(R.id.spinnerTemperatura);
         Button btnVolver = findViewById(R.id.btnVolver);
-        Button btnConvertirPeso = findViewById(R.id.btnConvertirPeso);
+        Button btnConvertirPeso = findViewById(R.id.btnConvertirTemperatura);
         TextView txtResultado = findViewById(R.id.txtResultado);
         EditText txtValor = findViewById(R.id.txtValor);
 
@@ -152,8 +147,7 @@ public class PesoVista extends AppCompatActivity {
         btnVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(PesoVista.this, MainActivity.class);
-                startActivity(myIntent);
+                finish();
             }
         });
 

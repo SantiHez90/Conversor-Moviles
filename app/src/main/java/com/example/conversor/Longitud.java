@@ -40,8 +40,18 @@ public class Longitud extends Conversor {
         } else if (unidadOrigen.equals("Kilometros") && unidadDestino.equals("Millas náuticas")) {
             return cantidad * (1.0 / 0.5399568);
 
-        } else if (unidadOrigen.equals("Millas náuticas") && unidadDestino.equals("kilometros")) {
-            return cantidad * (1.0 / 1.852);
+        } else if (unidadOrigen.equals("Micrometros") && unidadDestino.equals("Milimetros")) {
+            return cantidad * 0.001;
+
+        } else if (unidadOrigen.equals("Milimetros") && unidadDestino.equals("Micrometros")) {
+            return cantidad * 1000;
+
+        }else if (unidadOrigen.equals("Decimetros") && unidadDestino.equals("Metros")) {
+            return cantidad * 0.1;
+
+        } else if (unidadOrigen.equals("Metros") && unidadDestino.equals("Decimetros")) {
+            return cantidad * 10;
+
         }else{
             throw new IllegalArgumentException("Pesos no compatibles");
         }

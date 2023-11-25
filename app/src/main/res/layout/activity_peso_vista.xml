@@ -21,13 +21,13 @@
         android:textColor="#000000"
         android:textColorHighlight="#000000"
         android:textColorLink="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/spinnerPeso"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerTemperatura"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinnerPeso"
+        android:id="@+id/spinnerTemperatura"
         android:layout_width="333dp"
         android:layout_height="43dp"
         android:layout_marginStart="39dp"
@@ -53,7 +53,7 @@
         app:layout_constraintBottom_toTopOf="@+id/txtResultado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerPeso" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTemperatura" />
 
     <TextView
         android:id="@+id/txtResultado"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtValor" />
 
     <Button
-        android:id="@+id/btnConvertirPeso"
+        android:id="@+id/btnConvertirTemperatura"
         android:layout_width="186dp"
         android:layout_height="70dp"
         android:layout_marginStart="112dp"

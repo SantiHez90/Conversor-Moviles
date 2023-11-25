@@ -17,7 +17,7 @@ public class Temperatura extends Conversor {
         } else if (unidadOrigen.equals("Celsius") && unidadDestino.equals("Kelvin")) {
             // Celsius a Kelvin
             return cantidad + 273.15;
-        } else if (unidadOrigen.equals("Kelvin") && unidadDestino.equals("Celsius")) {
+        } else if (unidadOrigen.equals("Fahrenheit") && unidadDestino.equals("Kelvin")) {
             // Kelvin a Celsius
             return cantidad - 273.15;
         } else if (unidadOrigen.equals("Fahrenheit") && unidadDestino.equals("Kelvin")) {

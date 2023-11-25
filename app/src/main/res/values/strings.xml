@@ -15,33 +15,60 @@
     <string-array name="Peso">
         <item>Kilogramos a Libras</item>
         <item>Libras a Kilogramos</item>
-
         <item>Gramos a Libras</item>
         <item>Libras a Gramos</item>
-
         <item>Kilogramos a Gramos</item>
         <item>Gramos a Kilogramos</item>
-
         <item>Toneladas a Kilogramos</item>
         <item>Kilogramos a Toneladas</item>
-
         <item>Libras a Onzas</item>
         <item>Onzas a Libras</item>
-
         <item>Gramos a Onzas</item>
         <item>Onzas a Gramos</item>
-
         <item>Toneladas a Libras</item>
         <item>Libras a Toneladas</item>
-
         <item>Toneladas a Gramos</item>
         <item>Gramos a Toneladas</item>
-
         <item>Toneladas a Miligramos</item>
         <item>Miligramos a Toneladas</item>
-
         <item>Kilogramos a Miligramos</item>
         <item>Miligramos a Kilogramos</item>
 
+
+
+    </string-array>
+
+    <string-array name="Longitud">
+        <item>Metros a Pies</item>
+        <item>Pies a Metros</item>
+
+        <item>Kilómetros a Millas</item>
+        <item>Millas a Kilómetros</item>
+
+        <item>Centímetros a Pulgadas</item>
+        <item>Pulgadas a Centímetros</item>
+
+        <item>Yardas a Metros</item>
+        <item>Metros a Yardas</item>
+
+        <item>Millas Náuticas a Kilómetros</item>
+        <item>Kilómetros a Millas Náuticas</item>
+
+        <item>Micrómetros a Milímetros</item>
+        <item>Milímetros a Micrómetros</item>
+
+        <item>Decímetros a Metros</item>
+        <item>Metros a Decímetros</item>
+</string-array>
+
+    <string-array name="Divisas">
+        <item>Dólar estadounidense a Euro</item>
+        <item>Euro a Dólar estadounidense</item>
+
+        <item>Dólar estadounidense a Peso colombiano</item>
+        <item>Peso colombiano a Dólar estadounidense</item>
+
+        <item>Euro a Peso colombiano</item>
+        <item>Peso colombiano a Euro</item>
     </string-array>
 </resources>
