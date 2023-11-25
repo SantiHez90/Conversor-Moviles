@@ -9,28 +9,77 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView2"
+
+    <RelativeLayout
+        android:id="@+id/SegLayout"
+        android:layout_width="410dp"
+        android:layout_height="87dp"
+        android:background="#bf8450"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Conversor de unidades"
+            android:textAlignment="center"
+            android:textColor="#A63C3C"
+            android:textSize="35sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/Texto3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Convertor"
-        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="Elige una de las opciones"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
         android:textColor="#A63C3C"
-        android:textSize="48sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/btnTemperatura"
+        android:fontFamily="sans-serif"
+
+        />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:src="@drawable/balanza"
+            android:layout_width="203dp"
+            android:layout_height="213dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150sp"
+            />
+
+        <Button
+        android:id="@+id/btnTemperatura"
+        android:layout_width="293dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#bf8450"
+        android:text="Convertir a temperatura"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLongitud"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"/>
 
     <Button
         android:id="@+id/btnLongitud"
         android:layout_width="293dp"
         android:layout_height="56dp"
-        android:layout_marginStart="58dp"
+        android:layout_marginStart="59dp"
+        android:layout_below="@id/btnTemperatura"
         android:layout_marginEnd="60dp"
         android:backgroundTint="#bf8450"
         android:text="Convertir a longitud"
@@ -39,49 +88,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTemperatura" />
-
-    <Button
-        android:id="@+id/btnTemperatura"
-        android:layout_width="293dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="194dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="1dp"
-        android:backgroundTint="#bf8450"
-        android:backgroundTintMode="add"
-        android:rotation="0"
-        android:text="Convertir a temperatura"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnLongitud"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/btnDivisas"
-        android:layout_width="294dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="52dp"
-        android:backgroundTint="#bf8450"
-        android:text="Convertir divisas"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPeso" />
+        />
 
     <Button
         android:id="@+id/btnPeso"
-        android:layout_width="294dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="57dp"
+        android:layout_width="293dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="59dp"
+        android:layout_below="@id/btnLongitud"
         android:layout_marginEnd="60dp"
         android:backgroundTint="#bf8450"
         android:text="Convertir a peso"
@@ -90,6 +104,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLongitud" />
+        />
+
+    <Button
+        android:id="@+id/btnDivisas"
+        android:layout_width="293dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="59dp"
+        android:layout_below="@id/btnPeso"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#bf8450"
+        android:text="Convertir divisas"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

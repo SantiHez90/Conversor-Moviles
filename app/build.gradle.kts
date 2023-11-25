@@ -4,7 +4,8 @@ plugins {
 
 android {
     namespace = "com.example.conversor"
-    compileSdk = 33
+    compileSdk = 34
+
 
     defaultConfig {
         applicationId = "com.example.conversor"
